@@ -1,0 +1,93 @@
+@import url("fonts.css");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  [type="text"],
+  [type="email"],
+  [type="url"],
+  [type="password"],
+  [type="number"],
+  [type="date"],
+  [type="datetime-local"],
+  [type="month"],
+  [type="search"],
+  [type="tel"],
+  [type="time"],
+  [type="week"],
+  [multiple],
+  [textarea],
+  [select] {
+    @apply w-full text-slate-800 rounded-md bg-violet-700 dark:focus:bg-slate-800 focus:ring focus:ring-sky-500 border-2 border-solid border-gray-300 px-3 py-2;
+  }
+  [type="checkbox"],
+  [type="radio"] {
+    @apply rounded border-2 focus:ring focus:ring-sky-500 border-solid border-gray-300;
+  }
+  [type="submit"] {
+    @apply text-white bg-violet-800 hover:bg-violet-900 focus:ring-4 focus:outline-none focus:ring-violet-300 font-medium rounded-lg text-sm w-full px-5 py-2 text-center dark:bg-violet-600 dark:hover:bg-violet-700 dark:focus:ring-violet-800;
+  }
+  body {
+    @apply font-['IRANSansFaNum'] overflow-x-hidden relative bg-blue-50 text-base leading-9 text-slate-800 dark:bg-slate-800 dark:text-slate-400;
+  }
+  .perfectCenter{
+    @apply flex justify-center items-center;
+  }
+  .spaceBetween{
+    @apply flex justify-between items-center;
+  }
+  .font-EnNum{
+    @apply font-['IRANSans'];
+  }
+  .shadow-soft{
+    @apply shadow-[6px_73px_62px_rgb(0,12,119,3%)];
+  }
+}
+ body {
+    @apply font-['IRANSansFaNum'] overflow-x-hidden relative bg-blue-50 text-base leading-9 text-slate-800 dark:bg-slate-800 dark:text-slate-400;
+  }
+  .perfectCenter{
+    @apply flex justify-center items-center;
+  }
+  .spaceBetween{
+    @apply flex justify-between items-center;
+  }
+  .font-EnNum{
+    @apply font-['IRANSans'];
+  }
+  .shadow-soft{
+    @apply shadow-[6px_73px_62px_rgb(0,12,119,3%)];
+  }
+
+* {
+  -webkit-user-select: none;
+}
+  a {
+    color: inherit;
+    text-decoration: none;
+}
+/*  PREVENT TEXT SIZE SCALLING */
+
+/* iPhone, portrait & landscape. */
+@media all and (max-device-width: 480px) {
+  html,
+  body,
+  p {
+    text-size-adjust: none !important;
+    -webkit-text-size-adjust: none !important;
+    -moz-text-size-adjust: none !important;
+    -ms-text-size-adjust: none !important;
+  }
+}
+/* iPad, portrait & landscape. */
+@media all and (min-device-width: 768px) and (max-device-width: 1024px) {
+  html,
+  body,
+  p {
+    text-size-adjust: none !important;
+    -webkit-text-size-adjust: none !important;
+    -moz-text-size-adjust: none !important;
+    -ms-text-size-adjust: none !important;
+  }
+}
