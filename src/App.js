@@ -17,7 +17,7 @@ function App() {
     <>
       <Header />
       <Routes>
-        <Route path="/" element={<Home />} />
+        <Route path="/" element={<Home />} /> 
         <Route path="/IntroFeatures" element={<IntroFeatures />} />
         <Route path="/AboutUS" element={<AboutUS />} />
         <Route path="/ShopAccount" element={<ShopAccount />} />
